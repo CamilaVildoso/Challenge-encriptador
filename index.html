@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cami:Challenge Decodificador </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#E5E5E5;">
+    <main>
+
+        <div class="textos">
+            <input type="text" id="textoIngresado" placeholder="Ingrese el texto aquí ...">
+            <input type="text" id="mensaje" placeholder="Ingresa el texto que deseas encriptar o desencriptar ...">
+        </div>
+    
+        <div class="botones">
+            <button onclick="encriptar();" class ="boton" >Encriptar</button>
+            <button onclick="desencriptar();" class="boton" id="reiniciar" disabled>Desencriptar</button>
+            <button onclick="copiar();" class ="boton" >Copiar</button>
+        </div>
+
+        <div class="mensajeDeAdvertencia">
+            <p id="advertencia">Solo letras minúsculas y sin acentos</p>
+
+        </div>
+
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
