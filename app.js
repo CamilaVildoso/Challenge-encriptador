@@ -13,7 +13,6 @@ function EncriptarF(stringEncriptada){
 
     let codigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
-    let tieneMayusculas = /[A-ZÁÉÍÓÚ]/.test(stringEncriptada);
     let tieneAcentos = /[áéíóú]/.test(stringEncriptada);
 
     if (tieneMayusculas || tieneAcentos) {
