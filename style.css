@@ -1,14 +1,117 @@
-#mensaje { 
+*{
+    background-color:#F3F5FC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    margin-top: 2em;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+}
+
+.parte1{
+    width: 25em;
+    height: 15em;
+    margin-left: 80px;
+}
+
+#textoIngresado{
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    resize: none;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+#textoIngresado:focus{
+    outline: none; /* focus ayuda a que ya no aparesca el recuadro al dar click en el lugar*/
+}
+
+#mensaje{
+    background: white;
+    background-image: url(./img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    color: #0A3871;
+    margin-left: 105px;
+    padding-left: 20px;
     position: fixed;
-    right: 5%;
-    display: inline-block;
-    width: 200px;
-    height: 544px;
-    border-radius: 10px;
-    border: 1px solid black
+    resize: none;
+    width: 10em;
+    height: 16em;
+}
+
+#mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    font-size: 0.5em;
+    cursor: pointer;
+    height: 55px;
+    width: 300px;
+}
+
+.desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 0.5em;
+    cursor: pointer;
+    height: 55px;
+    margin-left: 30px;
+    width: 300px;
+}
+
+
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 0.5em;
+    cursor: pointer;
+    background: white;
+    height: 55px;
+    margin-left: 125px;
+    margin-top: 450px;
+    position: absolute;
+    width: 300px;
+}
+
+#advertencia{
+    font-size: 0.4em;
 }
 
 #advertencia::before {
-    display: inline-block;width: 1em;height: 1em;vertical-align: -0.125em;margin: 0 5px 0 0;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    margin: 0 5px 0 0;
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23495057' d='M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z'/%3E%3C/svg%3E");
 }

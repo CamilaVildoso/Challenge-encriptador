@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cami:Challenge Decodificador </title>
+    <title> Cami:Challenge Encriptador </title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:#E5E5E5;">
+
+<body>
+
+    <header>
+        <img src="/img/Logo.png" alt="logo alura" class="logo">
+    </header>
+
+
     <main>
 
-        <div class="textos">
-            <input type="text" id="textoIngresado" placeholder="Ingrese el texto aquí ...">
-            <input type="text" id="mensaje" placeholder="Ingresa el texto que deseas encriptar o desencriptar ...">
-        </div>
+        <section class="parte1">
+            <textarea type="text" cols="30" rows="5"   id="textoIngresado" placeholder="Ingrese el texto aquí ..."></textarea>
+        
+            <div class="mensajeDeAdvertencia">
+                <p id="advertencia">Solo letras minúsculas y sin acentos</p>
     
-        <div class="botones">
-            <button onclick="encriptar();" class ="boton" >Encriptar</button>
-            <button onclick="desencriptar();" class="boton" id="reiniciar" disabled>Desencriptar</button>
-            <button onclick="copiar();" class ="boton" >Copiar</button>
-        </div>
+            </div>
+            <div class="botones">
+                <button onclick="encriptar();" class ="encriptar" >Encriptar</button>
+                <button onclick="desencriptar();" class="desencriptar" id="reiniciar"> Desencriptar</button>
+            </div>
+        </section>
 
-        <div class="mensajeDeAdvertencia">
-            <p id="advertencia">Solo letras minúsculas y sin acentos</p>
-
-        </div>
+        <section class="parte2">
+            <textarea class="textarea" cols="20" rows="10"   id="mensaje" placeholder=""></textarea>
+            <div class="boton">
+                <button onclick="copiar();" class ="copiar" >Copiar</button>
+            </div>
+        </section>
 
     </main>
-
-
 
     <script src="app.js"></script>
 </body>
