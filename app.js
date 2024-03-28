@@ -15,7 +15,7 @@ function EncriptarF(stringEncriptada){
 
     let tieneAcentos = /[áéíóú]/.test(stringEncriptada);
 
-    if (tieneMayusculas || tieneAcentos) {
+    if (tieneAcentos) {
         alert("Por favor, escriba solo con letras minúsculas y sin acentos.");
         return;
     }
