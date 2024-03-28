@@ -36,6 +36,7 @@ function desencriptar(){
     let textoEncriptado = DesencriptarF(textoIngresado.value)
     mensaje.value = textoEncriptado
     textoIngresado.value = "";
+    mensaje.style.backgroundImage = "none";
 }
 
 function DesencriptarF(stringDesencriptado){
