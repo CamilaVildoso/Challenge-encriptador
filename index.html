@@ -7,24 +7,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="./img/candado.png" />
-    <title> Cami:Challenge Encriptador </title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title> CamiCode </title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <header>
-        <img src="/img/Logo.png" alt="logo alura" class="logo">
+        <img src="./img/Logo.png" alt="logo alura" class="logo">
+        <h1 class="titulo">Tu código secreto con CamiCode </h1>
     </header>
 
 
-    <main>
+    <main class="orden_section" id="contenedor_todo">
 
         <section class="parte1">
             <textarea type="text" cols="30" rows="5"   id="textoIngresado" placeholder="Ingrese el texto aquí ..."></textarea>
         
             <div class="mensajeDeAdvertencia">
+                <img src="./img/advertencia.png">
                 <p id="advertencia">Solo letras minúsculas y sin acentos</p>
     
             </div>
@@ -33,13 +35,18 @@
                 <button onclick="desencriptar();" class="desencriptar" id="reiniciar"> Desencriptar</button>
             </div>
         </section>
+       
 
+        
         <section class="parte2">
-            <textarea class="textarea" cols="20" rows="10"   id="mensaje" placeholder=""></textarea>
-            <div class="boton">
-                <button onclick="copiar();" class ="copiar" >Copiar</button>
+            <div class="textarea-container_parte2">
+                <textarea class="mensaje_parte2" cols="20" rows="10"   id="mensaje" placeholder=""></textarea>
+                <div class="boton_parte2">
+                    <button onclick="copiar();" class ="copiar" >Copiar</button>
+                </div>
             </div>
         </section>
+        
 
     </main>
 
