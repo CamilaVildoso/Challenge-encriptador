@@ -1,11 +1,10 @@
 <h1 align= "center" > CamiCode </h1>
 <p align="center"> Reto creado por Alura latam para todos sus participantes donde demostraremos nuestras habilidades aprendidas.</p>
 
-
 <p align="center">
-  <a href="#tecnologias" style="color:pink">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#projeto" style="color:pink">Proyeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#link" style="color:pink">Link</a>
+  <a href="#tecnologias" style="color:purple">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#projeto" style="color:purple">Proyeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#link" style="color:purple">Link</a>
 </p>
 
 ## 💻 Tecnologias 
